@@ -12,7 +12,7 @@
     <meta name="keywords" content="advogado trabalhista, advocacia trabalhista, processo trabalhista, direito do trabalhador, verbas rescisórias, rescisão de contrato, demissão sem justa causa, horas extras, assédio moral no trabalho, acidente de trabalho, reversão de justa causa, Gabriela Pita Advogados">
     <meta name="author" content="Gabriela Pita Advogados Associados">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.gabrielapitaadv.com.br">
+    <link class="canonical" href="https://www.gabrielapitaadv.com.br">
 
     <!-- ==========================================
          OPEN GRAPH / META TAGS PARA REDES SOCIAIS (WHATSAPP, FACEBOOK, LINKEDIN)
@@ -167,7 +167,7 @@
     }
     </script>
 
-    <!-- 2. Rich Snippet de FAQ (Aparece em destaque na pesquisa do Google) -->
+    <!-- 2. Rich Snippet de FAQ -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -277,13 +277,13 @@
     </header>
 
     <!-- ==========================================
-         STREAMING_CHUNK: Renderizando Hero Section com alinhamento ao limite inferior e foto integrada
+         STREAMING_CHUNK: Renderizando Hero Section com alinhamento ao limite inferior, foto integrada e correções de viewport
          ========================================== -->
     <section id="inicio" class="relative min-h-screen lg:h-screen flex items-end pt-24 pb-0 lg:pt-20 overflow-hidden bg-brand-dark">
-        <!-- Linhas e Grafismos de Fundo (Exclusivos e minimalistas) -->
+        <!-- Linhas e Grafismos de Fundo (Exclusivos e minimalistas - apenas em telas grandes) -->
         <div class="absolute inset-0 pointer-events-none opacity-20">
-            <div class="absolute top-1/4 left-1/10 w-[1px] h-96 bg-gradient-to-b from-brand-gold to-transparent"></div>
-            <div class="absolute top-1/2 right-1/4 w-[1px] h-[500px] bg-gradient-to-b from-transparent via-brand-gold to-transparent"></div>
+            <div class="hidden lg:block absolute top-1/4 left-1/10 w-[1px] h-96 bg-gradient-to-b from-brand-gold to-transparent"></div>
+            <div class="hidden lg:block absolute top-1/2 right-1/4 w-[1px] h-[500px] bg-gradient-to-b from-transparent via-brand-gold to-transparent"></div>
             <div class="absolute -top-40 right-10 w-[300px] h-[300px] rounded-full bg-brand-gold/5 blur-[120px]"></div>
             <div class="absolute bottom-10 left-5 w-[400px] h-[400px] rounded-full bg-blue-900/10 blur-[150px]"></div>
         </div>
@@ -291,10 +291,10 @@
         <div class="max-w-7xl mx-auto px-6 w-full relative z-10">
             <!-- Grid configurado com items-end para alinhar a base da foto e do texto perfeitamente -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
-                <!-- Informações do Hero com Reveal da Esquerda -->
-                <div class="lg:col-span-7 pb-12 lg:pb-24 space-y-6 md:space-y-8 reveal-left">
+                <!-- Informações do Hero com Reveal da Esquerda (Dinamicamente centralizado em tablet/mobile) -->
+                <div class="lg:col-span-7 pb-12 lg:pb-24 space-y-6 md:space-y-8 reveal-left text-center lg:text-left flex flex-col items-center lg:items-start">
                     <!-- Selo de Especialidade -->
-                    <div class="inline-flex items-center space-x-2.5 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-gold/20">
+                    <div class="inline-flex items-center space-x-2.5 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-gold/20 mx-auto lg:mx-0">
                         <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
                         <span class="text-xs font-semibold tracking-wider uppercase text-brand-goldLight">Especialista em Direito do Trabalhador</span>
                     </div>
@@ -305,13 +305,14 @@
                     </h1>
 
                     <!-- Descrição/Subhead -->
-                    <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-xl">
+                    <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-xl mx-auto lg:mx-0">
                         Descubra agora se você pode receber valores trabalhistas através de uma análise jurídica especializada. Atendimento estratégico para trabalhadores que precisam entender seus direitos com clareza, segurança e responsabilidade.
                     </p>
 
-                    <!-- CTAs com botões responsivos, arredondados e ícones fixos -->
-                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-5">
-                        <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-8 py-4.5 text-sm font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.5)] transform hover:-translate-y-0.5">
+                    <!-- CTAs com botões responsivos, arredondados, preenchimento ajustado e ícones fixos -->
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-5 w-full sm:w-auto justify-center lg:justify-start">
+                        <!-- Ajustado py-4 md:py-5 para corrigir o tamanho do botão verticalmente -->
+                        <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 text-sm md:text-base font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.5)] transform hover:-translate-y-0.5">
                             <svg class="w-5 h-5 mr-2.5 text-brand-dark fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.446L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.03-5.115-2.871-6.958-1.842-1.842-4.29-2.856-6.93-2.858-5.438 0-9.863 4.42-9.867 9.864-.001 1.773.475 3.502 1.393 5.045l-.955 3.488 3.536-.927zm11.233-7.531c-.3-.149-1.772-.875-2.046-.975-.274-.1-.474-.149-.674.15-.2.299-.775.975-.95 1.174-.175.2-.35.224-.65.074-.3-.149-1.265-.467-2.41-1.487-.89-.794-1.49-1.775-1.665-2.074-.175-.299-.019-.461.13-.609.135-.134.3-.349.45-.523.15-.174.2-.299.3-.498.1-.2.05-.374-.025-.524-.075-.15-.675-1.625-.925-2.224-.244-.589-.493-.51-.675-.519-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8.374-.275.299-1.05 1.025-1.05 2.5 0 1.475 1.075 2.9 1.225 3.1.15.2 2.11 3.22 5.115 4.526.714.31 1.27.496 1.71.636.717.228 1.37.196 1.885.12.573-.086 1.772-.724 2.022-1.424.25-.699.25-1.299.175-1.424-.075-.125-.275-.199-.575-.349z"/>
                             </svg>
@@ -332,7 +333,7 @@
     </section>
 
     <!-- ==========================================
-         STREAMING_CHUNK: Renderizando Seção de Dores e Problemas Trabalhistas
+         STREAMING_CHUNK: Renderizando Seção de Dores e Problemas Trabalhistas com botões em tamanho real
          ========================================== -->
     <section id="dores" class="py-20 md:py-28 bg-brand-card/40 border-y border-white/[0.03] relative">
         <div class="max-w-7xl mx-auto px-6">
@@ -438,9 +439,9 @@
                 </div>
             </div>
 
-            <!-- CTA da Seção de Dores -->
+            <!-- CTA da Seção de Dores (Ajustado py-4 md:py-5 para tamanho imponente) -->
             <div class="mt-14 text-center reveal">
-                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-10 py-5 text-sm font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.5)] transform hover:-translate-y-0.5">
+                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-10 py-4 md:py-5 text-sm md:text-base font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.5)] transform hover:-translate-y-0.5">
                     <svg class="w-5 h-5 mr-2.5 text-brand-dark fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.446L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.03-5.115-2.871-6.958-1.842-1.842-4.29-2.856-6.93-2.858-5.438 0-9.863 4.42-9.867 9.864-.001 1.773.475 3.502 1.393 5.045l-.955 3.488 3.536-.927zm11.233-7.531c-.3-.149-1.772-.875-2.046-.975-.274-.1-.474-.149-.674.15-.2.299-.775.975-.95 1.174-.175.2-.35.224-.65.074-.3-.149-1.265-.467-2.41-1.487-.89-.794-1.49-1.775-1.665-2.074-.175-.299-.019-.461.13-.609.135-.134.3-.349.45-.523.15-.174.2-.299.3-.498.1-.2.05-.374-.025-.524-.075-.15-.675-1.625-.925-2.224-.244-.589-.493-.51-.675-.519-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8.374-.275.299-1.05 1.025-1.05 2.5 0 1.475 1.075 2.9 1.225 3.1.15.2 2.11 3.22 5.115 4.526.714.31 1.27.496 1.71.636.717.228 1.37.196 1.885.12.573-.086 1.772-.724 2.022-1.424.25-.699.25-1.299.175-1.424-.075-.125-.275-.199-.575-.349z"/>
                     </svg>
@@ -472,13 +473,13 @@
                             O <strong class="text-white font-medium">Gabriela Pita Advogados Associados</strong> nasceu da construção de uma trajetória marcada pela ética, responsabilidade e compromisso genuíno com as pessoas.
                         </p>
                         <p>
-                            Com atuação consolidada na advocacia e forte presença institucional, a <strong class="text-brand-gold font-medium">Dra. Gabriela Pita</strong> desenvolveu sua carreira com foco em uma advocacia estratégica, humanizada e extremamente próxima do cliente, atuando na defesa dos direitos trabalhistas com excelência técnica e transparência.
+                            Com atuação consolidada na advocacia e forte presença institucional, a <strong class="text-brand-gold font-medium">Dra. Gabriela Pita</strong> desenvolveu sua carreira com foco em uma advocacia estratégica, humanizada e extremamente próxima do cliente, atuando na defense dos direitos trabalhistas com excelência técnica e transparência.
                         </p>
                     </div>
 
-                    <!-- Botão Arredondado com WhatsApp -->
+                    <!-- Botão Arredondado com WhatsApp e Tamanho Corrigido -->
                     <div class="pt-4">
-                        <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-8 py-5 text-sm font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_14px_rgba(212,175,55,0.25)] hover:shadow-[0_6px_25px_rgba(212,175,55,0.4)]">
+                        <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-8 md:px-10 py-4 md:py-5 text-sm md:text-base font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_14px_rgba(212,175,55,0.25)] hover:shadow-[0_6px_25px_rgba(212,175,55,0.4)]">
                             <svg class="w-5 h-5 mr-2.5 text-brand-dark fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.446L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.03-5.115-2.871-6.958-1.842-1.842-4.29-2.856-6.93-2.858-5.438 0-9.863 4.42-9.867 9.864-.001 1.773.475 3.502 1.393 5.045l-.955 3.488 3.536-.927zm11.233-7.531c-.3-.149-1.772-.875-2.046-.975-.274-.1-.474-.149-.674.15-.2.299-.775.975-.95 1.174-.175.2-.35.224-.65.074-.3-.149-1.265-.467-2.41-1.487-.89-.794-1.49-1.775-1.665-2.074-.175-.299-.019-.461.13-.609.135-.134.3-.349.45-.523.15-.174.2-.299.3-.498.1-.2.05-.374-.025-.524-.075-.15-.675-1.625-.925-2.224-.244-.589-.493-.51-.675-.519-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8.374-.275.299-1.05 1.025-1.05 2.5 0 1.475 1.075 2.9 1.225 3.1.15.2 2.11 3.22 5.115 4.526.714.31 1.27.496 1.71.636.717.228 1.37.196 1.885.12.573-.086 1.772-.724 2.022-1.424.25-.699.25-1.299.175-1.424-.075-.125-.275-.199-.575-.349z"/>
                             </svg>
@@ -542,7 +543,7 @@
             <div class="max-w-3xl mx-auto text-center space-y-4 mb-16 reveal">
                 <p class="text-xs tracking-[0.2em] text-brand-gold uppercase font-bold">Nossa Especialidade</p>
                 <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
-                    Como podemos ajudar na defense dos seus direitos trabalhistas
+                    Como podemos ajudar na defesa dos seus direitos trabalhistas
                 </h2>
                 <div class="w-16 h-0.5 bg-brand-gold mx-auto mt-4"></div>
             </div>
@@ -664,9 +665,9 @@
 
             </div>
 
-            <!-- CTA da Seção de Atuação -->
+            <!-- CTA da Seção de Atuação (Ajustado py-4 md:py-5 para tamanho imponente) -->
             <div class="mt-14 text-center reveal">
-                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-10 py-5 text-sm font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.5)] transform hover:-translate-y-0.5">
+                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-10 py-4 md:py-5 text-sm md:text-base font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.5)] transform hover:-translate-y-0.5">
                     <svg class="w-5 h-5 mr-2.5 text-brand-dark fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.446L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.03-5.115-2.871-6.958-1.842-1.842-4.29-2.856-6.93-2.858-5.438 0-9.863 4.42-9.867 9.864-.001 1.773.475 3.502 1.393 5.045l-.955 3.488 3.536-.927zm11.233-7.531c-.3-.149-1.772-.875-2.046-.975-.274-.1-.474-.149-.674.15-.2.299-.775.975-.95 1.174-.175.2-.35.224-.65.074-.3-.149-1.265-.467-2.41-1.487-.89-.794-1.49-1.775-1.665-2.074-.175-.299-.019-.461.13-.609.135-.134.3-.349.45-.523.15-.174.2-.299.3-.498.1-.2.05-.374-.025-.524-.075-.15-.675-1.625-.925-2.224-.244-.589-.493-.51-.675-.519-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8.374-.275.299-1.05 1.025-1.05 2.5 0 1.475 1.075 2.9 1.225 3.1.15.2 2.11 3.22 5.115 4.526.714.31 1.27.496 1.71.636.717.228 1.37.196 1.885.12.573-.086 1.772-.724 2.022-1.424.25-.699.25-1.299.175-1.424-.075-.125-.275-.199-.575-.349z"/>
                     </svg>
@@ -758,9 +759,9 @@
             <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
                 Ter clareza sobre seus direitos é o primeiro passo fundamental para tomar uma decisão segura e amparada legalmente.
             </p>
-            <!-- Botão Arredondado com WhatsApp -->
+            <!-- Botão Arredondado com WhatsApp (Ajustado py-4 md:py-5 para tamanho imponente) -->
             <div class="pt-4">
-                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-10 py-5 text-sm font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.35)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.5)] transform hover:-translate-y-0.5">
+                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-10 py-4 md:py-5 text-sm md:text-base font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.35)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.5)] transform hover:-translate-y-0.5">
                     <svg class="w-5 h-5 mr-2.5 text-brand-dark fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.446L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.03-5.115-2.871-6.958-1.842-1.842-4.29-2.856-6.93-2.858-5.438 0-9.863 4.42-9.867 9.864-.001 1.773.475 3.502 1.393 5.045l-.955 3.488 3.536-.927zm11.233-7.531c-.3-.149-1.772-.875-2.046-.975-.274-.1-.474-.149-.674.15-.2.299-.775.975-.95 1.174-.175.2-.35.224-.65.074-.3-.149-1.265-.467-2.41-1.487-.89-.794-1.49-1.775-1.665-2.074-.175-.299-.019-.461.13-.609.135-.134.3-.349.45-.523.15-.174.2-.299.3-.498.1-.2.05-.374-.025-.524-.075-.15-.675-1.625-.925-2.224-.244-.589-.493-.51-.675-.519-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8.374-.275.299-1.05 1.025-1.05 2.5 0 1.475 1.075 2.9 1.225 3.1.15.2 2.11 3.22 5.115 4.526.714.31 1.27.496 1.71.636.717.228 1.37.196 1.885.12.573-.086 1.772-.724 2.022-1.424.25-.699.25-1.299.175-1.424-.075-.125-.275-.199-.575-.349z"/>
                     </svg>
@@ -877,7 +878,7 @@
         </div>
     </section>
 
-    <!-- CTA Final com Reveal -->
+    <!-- CTA Final com Reveal e Botão Grande Arredondado -->
     <section class="py-20 md:py-28 bg-brand-card relative border-t border-white/[0.04]">
         <div class="max-w-5xl mx-auto px-6 text-center space-y-8 relative z-10 reveal">
             <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
@@ -886,9 +887,9 @@
             <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
                 Fale agora mesmo com o <strong class="text-white">Gabriela Pita Advogados Associados</strong> e receba uma orientação inicial segura e confidencial sobre o seu cenário.
             </p>
-            <!-- Botão Grande Arredondado Otimizado com SVG WhatsApp -->
+            <!-- Botão Grande Arredondado Otimizado com SVG WhatsApp (Ajustado py-4 md:py-5 para tamanho imponente) -->
             <div class="pt-4">
-                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-10 py-5 text-base font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_5px_25px_rgba(212,175,55,0.4)] hover:shadow-[0_8px_35px_rgba(212,175,55,0.6)] transform hover:-translate-y-1">
+                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-10 py-4 md:py-5 text-base font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_5px_25px_rgba(212,175,55,0.4)] hover:shadow-[0_8px_35px_rgba(212,175,55,0.6)] transform hover:-translate-y-1">
                     <svg class="w-6 h-6 mr-3 text-brand-dark fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.446L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.03-5.115-2.871-6.958-1.842-1.842-4.29-2.856-6.93-2.858-5.438 0-9.863 4.42-9.867 9.864-.001 1.773.475 3.502 1.393 5.045l-.955 3.488 3.536-.927zm11.233-7.531c-.3-.149-1.772-.875-2.046-.975-.274-.1-.474-.149-.674.15-.2.299-.775.975-.95 1.174-.175.2-.35.224-.65.074-.3-.149-1.265-.467-2.41-1.487-.89-.794-1.49-1.775-1.665-2.074-.175-.299-.019-.461.13-.609.135-.134.3-.349.45-.523.15-.174.2-.299.3-.498.1-.2.05-.374-.025-.524-.075-.15-.675-1.625-.925-2.224-.244-.589-.493-.51-.675-.519-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8.374-.275.299-1.05 1.025-1.05 2.5 0 1.475 1.075 2.9 1.225 3.1.15.2 2.11 3.22 5.115 4.526.714.31 1.27.496 1.71.636.717.228 1.37.196 1.885.12.573-.086 1.772-.724 2.022-1.424.25-.699.25-1.299.175-1.424-.075-.125-.275-.199-.575-.349z"/>
                     </svg>
