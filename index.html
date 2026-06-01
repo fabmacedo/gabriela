@@ -21,7 +21,7 @@
     <meta property="og:url" content="https://www.gabrielapitaadv.com.br">
     <meta property="og:title" content="Advogado Trabalhista | Gabriela Pita Advogados Associados">
     <meta property="og:description" content="Análise rápida e segura dos seus direitos trabalhistas. Fale agora no WhatsApp de forma confidencial.">
-    <meta property="og:image" content="https://placehold.co/1200x630/0B0F17/D4AF37?text=Gabriela+Pita+Advogados">
+    <meta property="og:image" content="https://fabmacedo.github.io/gabriela/709d7bd9-cf58-4f21-bce4-4c9e218bcb82.png">
     <meta property="og:site_name" content="Gabriela Pita Advogados Associados">
     <meta property="og:locale" content="pt_BR">
 
@@ -30,7 +30,7 @@
     <meta name="twitter:url" content="https://www.gabrielapitaadv.com.br">
     <meta name="twitter:title" content="Advogado Trabalhista | Gabriela Pita Advogados Associados">
     <meta name="twitter:description" content="Sofreu injustiça ou foi demitido sem receber seus direitos? Analise seu caso online agora de forma segura.">
-    <meta name="twitter:image" content="https://placehold.co/1200x630/0B0F17/D4AF37?text=Gabriela+Pita+Advogados">
+    <meta name="twitter:image" content="https://fabmacedo.github.io/gabriela/709d7bd9-cf58-4f21-bce4-4c9e218bcb82.png">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -100,8 +100,8 @@
         
         .reveal-right {
             opacity: 0;
-            transform: translateX(40px);
-            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+            transform: translateY(40px);
+            transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
             will-change: transform, opacity;
         }
         
@@ -130,7 +130,7 @@
       "@context": "https://schema.org",
       "@type": "Attorney",
       "name": "Gabriela Pita Advogados Associados",
-      "image": "https://placehold.co/1200x630/0B0F17/D4AF37?text=Gabriela+Pita+Advogados",
+      "image": "https://fabmacedo.github.io/gabriela/709d7bd9-cf58-4f21-bce4-4c9e218bcb82.png",
       "@id": "https://www.gabrielapitaadv.com.br/#attorney",
       "url": "https://www.gabrielapitaadv.com.br",
       "telephone": "+5500000000000",
@@ -276,9 +276,11 @@
         </div>
     </header>
 
-    <!-- Hero Section (Tela Completa Otimizada - h-screen) -->
-    <section id="inicio" class="relative min-h-screen lg:h-screen flex items-center pt-24 pb-12 lg:py-0 overflow-hidden">
-        <!-- Linhas e Grafismos de Fundo -->
+    <!-- ==========================================
+         STREAMING_CHUNK: Renderizando Hero Section com alinhamento ao limite inferior e foto integrada
+         ========================================== -->
+    <section id="inicio" class="relative min-h-screen lg:h-screen flex items-end pt-24 pb-0 lg:pt-20 overflow-hidden bg-brand-dark">
+        <!-- Linhas e Grafismos de Fundo (Exclusivos e minimalistas) -->
         <div class="absolute inset-0 pointer-events-none opacity-20">
             <div class="absolute top-1/4 left-1/10 w-[1px] h-96 bg-gradient-to-b from-brand-gold to-transparent"></div>
             <div class="absolute top-1/2 right-1/4 w-[1px] h-[500px] bg-gradient-to-b from-transparent via-brand-gold to-transparent"></div>
@@ -287,9 +289,10 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-6 w-full relative z-10">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Grid configurado com items-end para alinhar a base da foto e do texto perfeitamente -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
                 <!-- Informações do Hero com Reveal da Esquerda -->
-                <div class="lg:col-span-7 space-y-6 md:space-y-8 reveal-left">
+                <div class="lg:col-span-7 pb-12 lg:pb-24 space-y-6 md:space-y-8 reveal-left">
                     <!-- Selo de Especialidade -->
                     <div class="inline-flex items-center space-x-2.5 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-gold/20">
                         <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
@@ -306,7 +309,7 @@
                         Descubra agora se você pode receber valores trabalhistas através de uma análise jurídica especializada. Atendimento estratégico para trabalhadores que precisam entender seus direitos com clareza, segurança e responsabilidade.
                     </p>
 
-                    <!-- CTAs -->
+                    <!-- CTAs com botões responsivos, arredondados e ícones fixos -->
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-5">
                         <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-8 py-4.5 text-sm font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.5)] transform hover:-translate-y-0.5">
                             <svg class="w-5 h-5 mr-2.5 text-brand-dark fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
@@ -314,59 +317,23 @@
                             </svg>
                             QUERO ANALISAR MEU CASO
                         </a>
-                        <a href="#dores" class="inline-flex items-center justify-center px-6 py-4.5 text-sm font-medium tracking-wide text-slate-300 hover:text-brand-gold border border-white/[0.08] hover:border-brand-gold/30 rounded-full bg-white/[0.02] transition-all duration-300">
+                        <a href="#dores" class="inline-flex items-center justify-center px-6 py-4 text-sm font-medium tracking-wide text-slate-300 hover:text-brand-gold border border-white/[0.08] hover:border-brand-gold/30 rounded-full bg-white/[0.02] transition-all duration-300">
                             Ver direitos trabalhistas
                         </a>
                     </div>
                 </div>
 
-                <!-- Ilustração Lateral Premium com Reveal da Direita -->
-                <div class="lg:col-span-5 relative mt-6 lg:mt-0 reveal-right">
-                    <div class="relative mx-auto max-w-[380px] lg:max-w-none">
-                        <!-- Moldura dourada flutuante de fundo -->
-                        <div class="absolute -inset-1.5 rounded-lg bg-gradient-to-tr from-brand-gold/20 via-transparent to-brand-gold/5 opacity-70 blur-sm"></div>
-                        
-                        <!-- Conteúdo do Bloco Central -->
-                        <div class="relative bg-brand-card/90 rounded-lg p-8 border border-white/[0.08] backdrop-blur-md shadow-2xl space-y-8">
-                            <div class="flex justify-between items-start">
-                                <div class="space-y-1">
-                                    <p class="text-[10px] tracking-[0.2em] text-brand-gold uppercase font-semibold">Análise de Caso</p>
-                                    <h3 class="font-serif text-xl font-bold text-white">Suporte Jurídico</h3>
-                                </div>
-                                <svg class="w-8 h-8 text-brand-gold/80" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                                </svg>
-                            </div>
-
-                            <!-- Listagem de Atributos Premium -->
-                            <div class="space-y-4">
-                                <div class="flex items-center space-x-3.5 p-3 rounded-md bg-white/[0.02] border border-white/[0.04]">
-                                    <div class="w-2.5 h-2.5 rounded-full bg-brand-gold flex-shrink-0"></div>
-                                    <span class="text-sm font-medium text-slate-200">Atendimento 100% Online</span>
-                                </div>
-                                <div class="flex items-center space-x-3.5 p-3 rounded-md bg-white/[0.02] border border-white/[0.04]">
-                                    <div class="w-2.5 h-2.5 rounded-full bg-brand-gold flex-shrink-0"></div>
-                                    <span class="text-sm font-medium text-slate-200">Análise jurídica individualizada</span>
-                                </div>
-                                <div class="flex items-center space-x-3.5 p-3 rounded-md bg-white/[0.02] border border-white/[0.04]">
-                                    <div class="w-2.5 h-2.5 rounded-full bg-brand-gold flex-shrink-0"></div>
-                                    <span class="text-sm font-medium text-slate-200">Orientação clara, sem termos técnicos</span>
-                                </div>
-                            </div>
-
-                            <!-- Detalhes Finais Elegantes -->
-                            <div class="pt-6 border-t border-white/[0.05] flex items-center justify-between text-xs text-brand-textMuted">
-                                <span>Acompanhamento Próximo</span>
-                                <span class="text-brand-gold">Foco no Trabalhador</span>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Foto Oficial da Dra. Gabriela Pita com base tocando o chão (Sem margem/padding inferior para evitar cortes) -->
+                <div class="lg:col-span-5 flex justify-center lg:justify-end items-end reveal-right overflow-hidden">
+                    <img src="https://fabmacedo.github.io/gabriela/709d7bd9-cf58-4f21-bce4-4c9e218bcb82.png" alt="Dra. Gabriela Pita" class="max-h-[65vh] lg:max-h-[95vh] w-auto object-contain block select-none pointer-events-none" onerror="this.onerror=null; this.src='https://placehold.co/600x900/0B0F17/D4AF37?text=Dra.+Gabriela+Pita';">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Dores com Animacoes em Cascade (Staggered Delay) -->
+    <!-- ==========================================
+         STREAMING_CHUNK: Renderizando Seção de Dores e Problemas Trabalhistas
+         ========================================== -->
     <section id="dores" class="py-20 md:py-28 bg-brand-card/40 border-y border-white/[0.03] relative">
         <div class="max-w-7xl mx-auto px-6">
             <!-- Cabeçalho da Seção -->
@@ -473,7 +440,7 @@
 
             <!-- CTA da Seção de Dores -->
             <div class="mt-14 text-center reveal">
-                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-10 py-4.5 text-sm font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.5)] transform hover:-translate-y-0.5">
+                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-10 py-5 text-sm font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.5)] transform hover:-translate-y-0.5">
                     <svg class="w-5 h-5 mr-2.5 text-brand-dark fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.446L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.03-5.115-2.871-6.958-1.842-1.842-4.29-2.856-6.93-2.858-5.438 0-9.863 4.42-9.867 9.864-.001 1.773.475 3.502 1.393 5.045l-.955 3.488 3.536-.927zm11.233-7.531c-.3-.149-1.772-.875-2.046-.975-.274-.1-.474-.149-.674.15-.2.299-.775.975-.95 1.174-.175.2-.35.224-.65.074-.3-.149-1.265-.467-2.41-1.487-.89-.794-1.49-1.775-1.665-2.074-.175-.299-.019-.461.13-.609.135-.134.3-.349.45-.523.15-.174.2-.299.3-.498.1-.2.05-.374-.025-.524-.075-.15-.675-1.625-.925-2.224-.244-.589-.493-.51-.675-.519-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8.374-.275.299-1.05 1.025-1.05 2.5 0 1.475 1.075 2.9 1.225 3.1.15.2 2.11 3.22 5.115 4.526.714.31 1.27.496 1.71.636.717.228 1.37.196 1.885.12.573-.086 1.772-.724 2.022-1.424.25-.699.25-1.299.175-1.424-.075-.125-.275-.199-.575-.349z"/>
                     </svg>
@@ -483,8 +450,10 @@
         </div>
     </section>
 
-    <!-- Seção Sobre com Reveal lateral -->
-    <section id="sobre" class="py-20 md:py-28 relative">
+    <!-- ==========================================
+         STREAMING_CHUNK: Renderizando Seção Sobre o Escritório
+         ========================================== -->
+    <section id="sobre" class="py-20 md:py-28 relative bg-brand-dark">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
                 
@@ -503,13 +472,13 @@
                             O <strong class="text-white font-medium">Gabriela Pita Advogados Associados</strong> nasceu da construção de uma trajetória marcada pela ética, responsabilidade e compromisso genuíno com as pessoas.
                         </p>
                         <p>
-                            Com atuação consolidada na advocacia e forte presença institucional, a <strong class="text-brand-gold font-medium">Dra. Gabriela Pita</strong> desenvolveu sua carreira com foco em uma advocacia estratégica, humanizada e extremamente próxima do cliente, atuando na defense dos direitos trabalhistas com excelência técnica e transparência.
+                            Com atuação consolidada na advocacia e forte presença institucional, a <strong class="text-brand-gold font-medium">Dra. Gabriela Pita</strong> desenvolveu sua carreira com foco em uma advocacia estratégica, humanizada e extremamente próxima do cliente, atuando na defesa dos direitos trabalhistas com excelência técnica e transparência.
                         </p>
                     </div>
 
                     <!-- Botão Arredondado com WhatsApp -->
                     <div class="pt-4">
-                        <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-8 py-4.5 text-sm font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_14px_rgba(212,175,55,0.25)] hover:shadow-[0_6px_25px_rgba(212,175,55,0.4)]">
+                        <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-8 py-5 text-sm font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_14px_rgba(212,175,55,0.25)] hover:shadow-[0_6px_25px_rgba(212,175,55,0.4)]">
                             <svg class="w-5 h-5 mr-2.5 text-brand-dark fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.446L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.03-5.115-2.871-6.958-1.842-1.842-4.29-2.856-6.93-2.858-5.438 0-9.863 4.42-9.867 9.864-.001 1.773.475 3.502 1.393 5.045l-.955 3.488 3.536-.927zm11.233-7.531c-.3-.149-1.772-.875-2.046-.975-.274-.1-.474-.149-.674.15-.2.299-.775.975-.95 1.174-.175.2-.35.224-.65.074-.3-.149-1.265-.467-2.41-1.487-.89-.794-1.49-1.775-1.665-2.074-.175-.299-.019-.461.13-.609.135-.134.3-.349.45-.523.15-.174.2-.299.3-.498.1-.2.05-.374-.025-.524-.075-.15-.675-1.625-.925-2.224-.244-.589-.493-.51-.675-.519-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8.374-.275.299-1.05 1.025-1.05 2.5 0 1.475 1.075 2.9 1.225 3.1.15.2 2.11 3.22 5.115 4.526.714.31 1.27.496 1.71.636.717.228 1.37.196 1.885.12.573-.086 1.772-.724 2.022-1.424.25-.699.25-1.299.175-1.424-.075-.125-.275-.199-.575-.349z"/>
                             </svg>
@@ -564,14 +533,16 @@
         </div>
     </section>
 
-    <!-- Seção Atuação com Revelações em Cascade (Stagger) -->
+    <!-- ==========================================
+         STREAMING_CHUNK: Renderizando Seção de Áreas de Atuação
+         ========================================== -->
     <section id="atuacao" class="py-20 md:py-28 bg-brand-card/20 border-y border-white/[0.03] relative">
         <div class="max-w-7xl mx-auto px-6">
             <!-- Cabeçalho da Seção -->
             <div class="max-w-3xl mx-auto text-center space-y-4 mb-16 reveal">
                 <p class="text-xs tracking-[0.2em] text-brand-gold uppercase font-bold">Nossa Especialidade</p>
                 <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
-                    Como podemos ajudar na defesa dos seus direitos trabalhistas
+                    Como podemos ajudar na defense dos seus direitos trabalhistas
                 </h2>
                 <div class="w-16 h-0.5 bg-brand-gold mx-auto mt-4"></div>
             </div>
@@ -695,7 +666,7 @@
 
             <!-- CTA da Seção de Atuação -->
             <div class="mt-14 text-center reveal">
-                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-10 py-4.5 text-sm font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.5)] transform hover:-translate-y-0.5">
+                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-10 py-5 text-sm font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.3)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.5)] transform hover:-translate-y-0.5">
                     <svg class="w-5 h-5 mr-2.5 text-brand-dark fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.446L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.03-5.115-2.871-6.958-1.842-1.842-4.29-2.856-6.93-2.858-5.438 0-9.863 4.42-9.867 9.864-.001 1.773.475 3.502 1.393 5.045l-.955 3.488 3.536-.927zm11.233-7.531c-.3-.149-1.772-.875-2.046-.975-.274-.1-.474-.149-.674.15-.2.299-.775.975-.95 1.174-.175.2-.35.224-.65.074-.3-.149-1.265-.467-2.41-1.487-.89-.794-1.49-1.775-1.665-2.074-.175-.299-.019-.461.13-.609.135-.134.3-.349.45-.523.15-.174.2-.299.3-.498.1-.2.05-.374-.025-.524-.075-.15-.675-1.625-.925-2.224-.244-.589-.493-.51-.675-.519-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8.374-.275.299-1.05 1.025-1.05 2.5 0 1.475 1.075 2.9 1.225 3.1.15.2 2.11 3.22 5.115 4.526.714.31 1.27.496 1.71.636.717.228 1.37.196 1.885.12.573-.086 1.772-.724 2.022-1.424.25-.699.25-1.299.175-1.424-.075-.125-.275-.199-.575-.349z"/>
                     </svg>
@@ -705,7 +676,9 @@
         </div>
     </section>
 
-    <!-- Seção Processo com Animacoes sequenciais -->
+    <!-- ==========================================
+         STREAMING_CHUNK: Renderizando Seção de Funcionamento do Processo
+         ========================================== -->
     <section id="processo" class="py-20 md:py-28 relative">
         <div class="max-w-7xl mx-auto px-6">
             <!-- Cabeçalho da Seção -->
@@ -785,9 +758,9 @@
             <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
                 Ter clareza sobre seus direitos é o primeiro passo fundamental para tomar uma decisão segura e amparada legalmente.
             </p>
-            <!-- Botão Arredondado Generoso com WhatsApp -->
+            <!-- Botão Arredondado com WhatsApp -->
             <div class="pt-4">
-                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-10 py-4.5 text-sm font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.35)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.5)] transform hover:-translate-y-0.5">
+                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-10 py-5 text-sm font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_20px_rgba(212,175,55,0.35)] hover:shadow-[0_6px_30px_rgba(212,175,55,0.5)] transform hover:-translate-y-0.5">
                     <svg class="w-5 h-5 mr-2.5 text-brand-dark fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.446L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.03-5.115-2.871-6.958-1.842-1.842-4.29-2.856-6.93-2.858-5.438 0-9.863 4.42-9.867 9.864-.001 1.773.475 3.502 1.393 5.045l-.955 3.488 3.536-.927zm11.233-7.531c-.3-.149-1.772-.875-2.046-.975-.274-.1-.474-.149-.674.15-.2.299-.775.975-.95 1.174-.175.2-.35.224-.65.074-.3-.149-1.265-.467-2.41-1.487-.89-.794-1.49-1.775-1.665-2.074-.175-.299-.019-.461.13-.609.135-.134.3-.349.45-.523.15-.174.2-.299.3-.498.1-.2.05-.374-.025-.524-.075-.15-.675-1.625-.925-2.224-.244-.589-.493-.51-.675-.519-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8.374-.275.299-1.05 1.025-1.05 2.5 0 1.475 1.075 2.9 1.225 3.1.15.2 2.11 3.22 5.115 4.526.714.31 1.27.496 1.71.636.717.228 1.37.196 1.885.12.573-.086 1.772-.724 2.022-1.424.25-.699.25-1.299.175-1.424-.075-.125-.275-.199-.575-.349z"/>
                     </svg>
@@ -797,7 +770,9 @@
         </div>
     </section>
 
-    <!-- FAQ com Revelação de Bloco Completo (SEO Schema FAQ Otimizado) -->
+    <!-- ==========================================
+         STREAMING_CHUNK: Renderizando Bloco do FAQ (Dúvidas Otimizadas)
+         ========================================== -->
     <section id="duvidas" class="py-20 md:py-28 relative">
         <div class="max-w-4xl mx-auto px-6">
             <!-- Cabeçalho da Seção -->
@@ -823,7 +798,7 @@
                         </svg>
                     </button>
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <!-- Ajuste de preenchimento superior elegante px-6 pb-6 pt-5 para espaçar do bloco do título -->
+                        <!-- Espaçamento superior e interno otimizado px-6 pb-6 pt-5 -->
                         <div class="px-6 pb-6 pt-5 border-t border-white/[0.03] text-sm sm:text-base text-brand-textMuted leading-relaxed">
                             Cada caso precisa ser analisado de forma estritamente individual. Elementos como verbas rescisórias, horas extras pendentes, reconhecimento de vínculo de emprego informal e outras situações específicas impactam de maneira direta nos direitos finais de cada trabalhador.
                         </div>
@@ -913,7 +888,7 @@
             </p>
             <!-- Botão Grande Arredondado Otimizado com SVG WhatsApp -->
             <div class="pt-4">
-                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-10 py-4.5 text-base font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_5px_25px_rgba(212,175,55,0.4)] hover:shadow-[0_8px_35px_rgba(212,175,55,0.6)] transform hover:-translate-y-1">
+                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-10 py-5 text-base font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_5px_25px_rgba(212,175,55,0.4)] hover:shadow-[0_8px_35px_rgba(212,175,55,0.6)] transform hover:-translate-y-1">
                     <svg class="w-6 h-6 mr-3 text-brand-dark fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.446L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.03-5.115-2.871-6.958-1.842-1.842-4.29-2.856-6.93-2.858-5.438 0-9.863 4.42-9.867 9.864-.001 1.773.475 3.502 1.393 5.045l-.955 3.488 3.536-.927zm11.233-7.531c-.3-.149-1.772-.875-2.046-.975-.274-.1-.474-.149-.674.15-.2.299-.775.975-.95 1.174-.175.2-.35.224-.65.074-.3-.149-1.265-.467-2.41-1.487-.89-.794-1.49-1.775-1.665-2.074-.175-.299-.019-.461.13-.609.135-.134.3-.349.45-.523.15-.174.2-.299.3-.498.1-.2.05-.374-.025-.524-.075-.15-.675-1.625-.925-2.224-.244-.589-.493-.51-.675-.519-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8.374-.275.299-1.05 1.025-1.05 2.5 0 1.475 1.075 2.9 1.225 3.1.15.2 2.11 3.22 5.115 4.526.714.31 1.27.496 1.71.636.717.228 1.37.196 1.885.12.573-.086 1.772-.724 2.022-1.424.25-.699.25-1.299.175-1.424-.075-.125-.275-.199-.575-.349z"/>
                     </svg>
@@ -929,7 +904,7 @@
     <!-- Footer Institucional e OAB -->
     <footer class="bg-[#070A10] pt-20 pb-8 border-t border-white/[0.03] relative overflow-hidden">
         
-        <!-- Texto de Fundo ( ROBERT style em image_e00985.jpg ) -->
+        <!-- Texto de Fundo (Estilo de Referência do modelo fornecido) -->
         <div class="absolute bottom-0 left-0 w-full select-none pointer-events-none z-0 overflow-hidden h-[120px] md:h-[240px]">
             <span class="absolute bottom-[-10px] md:bottom-[-40px] left-1/2 -translate-x-1/2 font-sans font-bold text-[60px] sm:text-[110px] md:text-[220px] tracking-[0.1em] text-white/[0.02] whitespace-nowrap text-center">
                 GABRIELA PITA
