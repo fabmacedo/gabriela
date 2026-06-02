@@ -214,73 +214,10 @@
 </head>
 <body class="bg-brand-dark text-slate-100 font-sans antialiased overflow-x-hidden">
 
-    <!-- Header Fixo Premium -->
-    <header class="fixed top-0 left-0 w-full z-50 bg-brand-dark/90 backdrop-blur-md border-b border-white/[0.05] transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <!-- Logo -->
-            <a href="#" class="flex flex-col items-center group" aria-label="Gabriela Pita Advogados Home">
-                <span class="font-bellefair text-2xl md:text-3xl tracking-[0.05em] text-white leading-none transition-colors duration-300">
-                    GABRIELA PITA
-                </span>
-                <span class="font-bellefair text-[9px] md:text-[11px] tracking-[0.3em] text-white uppercase mt-1 transition-colors duration-300">
-                    ADVOGADOS ASSOCIADOS
-                </span>
-            </a>
-
-            <!-- Menu de Navegação - Desktop -->
-            <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-slate-300">
-                <a href="#inicio" class="hover:text-brand-gold transition-colors">Início</a>
-                <a href="#dores" class="hover:text-brand-gold transition-colors">Seus Direitos</a>
-                <a href="#sobre" class="hover:text-brand-gold transition-colors">Sobre Nós</a>
-                <a href="#atuacao" class="hover:text-brand-gold transition-colors">Atuação</a>
-                <a href="#processo" class="hover:text-brand-gold transition-colors">Funcionamento</a>
-                <a href="#duvidas" class="hover:text-brand-gold transition-colors">Dúvidas</a>
-            </nav>
-
-            <!-- CTA Header -->
-            <div class="hidden sm:block">
-                <a href="https://wa.me/5500000000000" class="inline-flex items-center justify-center px-6 py-3.5 text-xs font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full shadow-[0_4px_14px_rgba(212,175,55,0.25)] hover:shadow-[0_6px_20px_rgba(212,175,55,0.4)] transform hover:-translate-y-0.5">
-                    <svg class="w-4 h-4 mr-2 text-brand-dark fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.446L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.03-5.115-2.871-6.958-1.842-1.842-4.29-2.856-6.93-2.858-5.438 0-9.863 4.42-9.867 9.864-.001 1.773.475 3.502 1.393 5.045l-.955 3.488 3.536-.927zm11.233-7.531c-.3-.149-1.772-.875-2.046-.975-.274-.1-.474-.149-.674.15-.2.299-.775.975-.95 1.174-.175.2-.35.224-.65.074-.3-.149-1.265-.467-2.41-1.487-.89-.794-1.49-1.775-1.665-2.074-.175-.299-.019-.461.13-.609.135-.134.3-.349.45-.523.15-.174.2-.299.3-.498.1-.2.05-.374-.025-.524-.075-.15-.675-1.625-.925-2.224-.244-.589-.493-.51-.675-.519-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8.374-.275.299-1.05 1.025-1.05 2.5 0 1.475 1.075 2.9 1.225 3.1.15.2 2.11 3.22 5.115 4.526.714.31 1.27.496 1.71.636.717.228 1.37.196 1.885.12.573-.086 1.772-.724 2.022-1.424.25-.699.25-1.299.175-1.424-.075-.125-.275-.199-.575-.349z"/>
-                    </svg>
-                    QUERO ANALISAR MEU CASO
-                </a>
-            </div>
-
-            <!-- Botão Hamburguer - Mobile -->
-            <button id="menu-btn" class="lg:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1.5 focus:outline-none" aria-label="Abrir Menu de Navegação">
-                <span class="w-6 h-0.5 bg-slate-100 transition-transform duration-300"></span>
-                <span class="w-6 h-0.5 bg-slate-100 transition-opacity duration-300"></span>
-                <span class="w-6 h-0.5 bg-slate-100 transition-transform duration-300"></span>
-            </button>
-        </div>
-
-        <!-- Menu Lateral - Mobile -->
-        <div id="mobile-menu" class="fixed top-20 left-0 w-full h-[calc(100vh-80px)] bg-brand-dark/95 backdrop-blur-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-40 lg:hidden">
-            <nav class="flex flex-col space-y-6 p-8 text-lg font-medium border-t border-white/[0.05]">
-                <a href="#inicio" class="text-slate-200 hover:text-brand-gold transition-colors py-2 border-b border-white/[0.03]">Início</a>
-                <a href="#dores" class="text-slate-200 hover:text-brand-gold transition-colors py-2 border-b border-white/[0.03]">Seus Direitos</a>
-                <a href="#sobre" class="text-slate-200 hover:text-brand-gold transition-colors py-2 border-b border-white/[0.03]">Sobre Nós</a>
-                <a href="#atuacao" class="text-slate-200 hover:text-brand-gold transition-colors py-2 border-b border-white/[0.03]">Atuação</a>
-                <a href="#processo" class="text-slate-200 hover:text-brand-gold transition-colors py-2 border-b border-white/[0.03]">Funcionamento</a>
-                <a href="#duvidas" class="text-slate-200 hover:text-brand-gold transition-colors py-2 border-b border-white/[0.03]">Dúvidas</a>
-                
-                <div class="pt-4">
-                    <a href="https://wa.me/5500000000000" class="w-full flex items-center justify-center py-4 text-sm font-bold tracking-wider uppercase text-brand-dark bg-brand-gold hover:bg-brand-goldLight transition-all duration-300 rounded-full">
-                        <svg class="w-5 h-5 mr-2.5 text-brand-dark fill-current flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true">
-                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.5-5.739-1.446L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.42 9.864-9.864.002-2.637-1.03-5.115-2.871-6.958-1.842-1.842-4.29-2.856-6.93-2.858-5.438 0-9.863 4.42-9.867 9.864-.001 1.773.475 3.502 1.393 5.045l-.955 3.488 3.536-.927zm11.233-7.531c-.3-.149-1.772-.875-2.046-.975-.274-.1-.474-.149-.674.15-.2.299-.775.975-.95 1.174-.175.2-.35.224-.65.074-.3-.149-1.265-.467-2.41-1.487-.89-.794-1.49-1.775-1.665-2.074-.175-.299-.019-.461.13-.609.135-.134.3-.349.45-.523.15-.174.2-.299.3-.498.1-.2.05-.374-.025-.524-.075-.15-.675-1.625-.925-2.224-.244-.589-.493-.51-.675-.519-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8.374-.275.299-1.05 1.025-1.05 2.5 0 1.475 1.075 2.9 1.225 3.1.15.2 2.11 3.22 5.115 4.526.714.31 1.27.496 1.71.636.717.228 1.37.196 1.885.12.573-.086 1.772-.724 2.022-1.424.25-.699.25-1.299.175-1.424-.075-.125-.275-.199-.575-.349z"/>
-                        </svg>
-                        QUERO ANALISAR MEU CASO
-                    </a>
-                </div>
-            </nav>
-        </div>
-    </header>
-
     <!-- ==========================================
-         STREAMING_CHUNK: Renderizando Hero Section com alinhamento ao limite inferior, foto integrada e correções de viewport
+         STREAMING_CHUNK: Renderizando Hero Section com Logotipo Integrado e sem Header Superior
          ========================================== -->
-    <section id="inicio" class="relative min-h-screen lg:h-screen flex items-end pt-24 pb-0 lg:pt-20 overflow-hidden bg-brand-dark">
+    <section id="inicio" class="relative min-h-screen flex items-end pt-16 pb-0 lg:pt-12 overflow-hidden bg-brand-dark">
         <!-- Linhas e Grafismos de Fundo (Exclusivos e minimalistas - apenas em telas grandes) -->
         <div class="absolute inset-0 pointer-events-none opacity-20">
             <div class="hidden lg:block absolute top-1/4 left-1/10 w-[1px] h-96 bg-gradient-to-b from-brand-gold to-transparent"></div>
@@ -294,6 +231,17 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
                 <!-- Informações do Hero com Reveal da Esquerda (Dinamicamente centralizado em tablet/mobile) -->
                 <div class="lg:col-span-7 pb-12 lg:pb-24 space-y-6 md:space-y-8 reveal-left text-center lg:text-left flex flex-col items-center lg:items-start">
+                    
+                    <!-- Logotipo Integrado ao Hero (Exatamente no topo do bloco de texto) -->
+                    <div class="flex flex-col items-center lg:items-start group mb-2">
+                        <span class="font-bellefair text-3xl md:text-4.5xl tracking-[0.05em] text-white leading-none">
+                            GABRIELA PITA
+                        </span>
+                        <span class="font-bellefair text-[10px] md:text-[12px] tracking-[0.3em] text-white uppercase mt-1">
+                            ADVOGADOS ASSOCIADOS
+                        </span>
+                    </div>
+
                     <!-- Selo de Especialidade -->
                     <div class="inline-flex items-center space-x-2.5 px-3.5 py-1.5 rounded-full bg-brand-card border border-brand-gold/20 mx-auto lg:mx-0">
                         <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
@@ -374,7 +322,7 @@
                         </div>
                         <h3 class="font-serif text-xl font-bold text-white">Horas extras negligenciadas</h3>
                         <p class="text-sm text-brand-textMuted leading-relaxed">
-                            Trabalho além da jornada contratual sem a devida compensação financeira ou registro em banco de horas.
+                            Trabalho além da jornada contratual sem a deviva compensação financeira ou registro em banco de horas.
                         </p>
                     </div>
                 </div>
@@ -474,7 +422,7 @@
                             O <strong class="text-white font-medium">Gabriela Pita Advogados Associados</strong> nasceu da construção de uma trajetória marcada pela ética, responsabilidade e compromisso genuíno com as pessoas.
                         </p>
                         <p>
-                            Com atuação consolidada na advocacia e forte presença institucional, a <strong class="text-brand-gold font-medium">Dra. Gabriela Pita</strong> desenvolveu sua carreira com foco em uma advocacia estratégica, humanizada e extremamente próxima do cliente, atuando na defense dos direitos trabalhistas com excelência técnica e transparência.
+                            Com atuação consolidada na advocacia e forte presença institucional, a <strong class="text-brand-gold font-medium">Dra. Gabriela Pita</strong> desenvolveu sua carreira com foco em uma advocacia estratégica, humanizada e extremamente próxima do cliente, atuando na defesa dos direitos trabalhistas com excelência técnica e transparência.
                         </p>
                     </div>
 
@@ -903,126 +851,8 @@
         </div>
     </section>
 
-    <!-- Footer Institucional e OAB -->
-    <footer class="bg-[#070A10] pt-20 pb-8 border-t border-white/[0.03] relative overflow-hidden">
-        
-        <!-- Texto de Fundo (Estilo de Referência do modelo fornecido) -->
-        <div class="absolute bottom-0 left-0 w-full select-none pointer-events-none z-0 overflow-hidden h-[120px] md:h-[240px]">
-            <span class="absolute bottom-[-10px] md:bottom-[-40px] left-1/2 -translate-x-1/2 font-sans font-bold text-[60px] sm:text-[110px] md:text-[220px] tracking-[0.1em] text-white/[0.02] whitespace-nowrap text-center">
-                GABRIELA PITA
-            </span>
-        </div>
-
-        <div class="max-w-7xl mx-auto px-6 relative z-10">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-white/[0.04]">
-                
-                <!-- Coluna 1: Logo e Descrição -->
-                <div class="lg:col-span-4 space-y-5">
-                    <div class="flex flex-col items-center lg:items-start">
-                        <div class="flex flex-col items-center">
-                            <span class="font-bellefair text-2xl tracking-[0.05em] text-white leading-none">
-                                GABRIELA PITA
-                            </span>
-                            <span class="font-bellefair text-[9px] tracking-[0.3em] text-white uppercase mt-1">
-                                ADVOGADOS ASSOCIADOS
-                            </span>
-                        </div>
-                    </div>
-                    <p class="text-xs text-brand-textMuted leading-relaxed max-w-sm">
-                        Escritório especializado na assessoria jurídica de alta performance voltada aos direitos do trabalhador de forma humanizada e estratégica.
-                    </p>
-                    <p class="text-xs text-brand-gold font-medium">
-                        OAB/UF 000.000
-                    </p>
-                </div>
-
-                <!-- Coluna 2: Links Rápidos -->
-                <div class="lg:col-span-4 space-y-4">
-                    <h5 class="text-sm font-bold uppercase tracking-wider text-white">Navegação</h5>
-                    <ul class="grid grid-cols-2 gap-2 text-xs text-brand-textMuted">
-                        <li><a href="#inicio" class="hover:text-brand-gold transition-colors">Início</a></li>
-                        <li><a href="#dores" class="hover:text-brand-gold transition-colors">Seus Direitos</a></li>
-                        <li><a href="#sobre" class="hover:text-brand-gold transition-colors">Sobre Nós</a></li>
-                        <li><a href="#atuacao" class="hover:text-brand-gold transition-colors">Nossa Atuação</a></li>
-                        <li><a href="#processo" class="hover:text-brand-gold transition-colors">Funcionamento</a></li>
-                        <li><a href="#duvidas" class="hover:text-brand-gold transition-colors">Dúvidas Frequentes</a></li>
-                    </ul>
-                </div>
-
-                <!-- Coluna 3: Contatos Oficiais -->
-                <div class="lg:col-span-4 space-y-4">
-                    <h5 class="text-sm font-bold uppercase tracking-wider text-white">Contato e Canais</h5>
-                    <ul class="text-xs text-brand-textMuted space-y-2.5">
-                        <li class="flex items-center space-x-2">
-                            <svg class="w-4 h-4 text-brand-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                            </svg>
-                            <span>WhatsApp: (00) 00000-0000</span>
-                        </li>
-                        <li class="flex items-center space-x-2">
-                            <svg class="w-4 h-4 text-brand-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                            </svg>
-                            <span>contato@gabrielapitaadv.com.br</span>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <!-- Notas de Rodapé e Regras Éticas -->
-            <div class="pt-8 flex flex-col md:flex-row items-center justify-between text-[10px] sm:text-xs text-brand-textMuted gap-4 relative z-10">
-                <p class="text-center md:text-left leading-relaxed">
-                    © 2026 Gabriela Pita Advogados Associados. Todos os direitos reservados.
-                </p>
-                <p class="text-center md:text-right max-w-md italic leading-relaxed">
-                    Este site possui caráter estritamente institucional e informativo, em total conformidade com as diretrizes e regras éticas estabelecidas pelo Provimento nº 205/2021 e pelo Código de Ética e Disciplina da OAB.
-                </p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts do Vanilla JS para Dinâmicas, Menu e Animações -->
+    <!-- Scripts do Vanilla JS para Dinâmicas e Animações -->
     <script>
-        // Toggle do Menu de Navegação - Mobile
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuLines = menuBtn.querySelectorAll('span');
-
-        menuBtn.addEventListener('click', () => {
-            const isOpened = mobileMenu.classList.contains('translate-x-0');
-            if (isOpened) {
-                mobileMenu.classList.add('-translate-x-full');
-                mobileMenu.classList.remove('translate-x-0');
-                // Reseta as linhas do hamburguer
-                menuLines[0].style.transform = 'translateY(0) rotate(0deg)';
-                menuLines[1].style.opacity = '1';
-                menuLines[2].style.transform = 'translateY(0) rotate(0deg)';
-                menuBtn.setAttribute('aria-expanded', 'false');
-            } else {
-                mobileMenu.classList.remove('-translate-x-full');
-                mobileMenu.classList.add('translate-x-0');
-                // Transforma as linhas do hamburguer em 'X'
-                menuLines[0].style.transform = 'translateY(8px) rotate(45deg)';
-                menuLines[1].style.opacity = '0';
-                menuLines[2].style.transform = 'translateY(-8px) rotate(-45deg)';
-                menuBtn.setAttribute('aria-expanded', 'true');
-            }
-        });
-
-        // Fechar o menu mobile ao clicar em um link
-        const mobileLinks = mobileMenu.querySelectorAll('a');
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('-translate-x-full');
-                mobileMenu.classList.remove('translate-x-0');
-                menuLines[0].style.transform = 'translateY(0) rotate(0deg)';
-                menuLines[1].style.opacity = '1';
-                menuLines[2].style.transform = 'translateY(0) rotate(0deg)';
-                menuBtn.setAttribute('aria-expanded', 'false');
-            });
-        });
-
         // Efeito de FAQ Accordion Manual com transições de altura e suporte ARIA
         const faqToggles = document.querySelectorAll('.faq-toggle');
         faqToggles.forEach(toggle => {
@@ -1050,16 +880,6 @@
                     toggle.setAttribute('aria-expanded', 'true');
                 }
             });
-        });
-
-        // Mudança de opacidade do Header ao scrollar
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('bg-brand-dark/95', 'shadow-lg');
-            } else {
-                header.classList.remove('bg-brand-dark/95', 'shadow-lg');
-            }
         });
 
         // Configuração do Scroll Reveal (Intersection Observer) para dar o visual dinâmico à página
